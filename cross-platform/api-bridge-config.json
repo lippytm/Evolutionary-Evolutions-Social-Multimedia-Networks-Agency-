@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "description": "API bridge configuration for external platform integrations",
+  "platforms": {
+    "openai": {
+      "base_url": "https://api.openai.com/v1",
+      "auth": "Bearer ${OPENAI_API_KEY}",
+      "models": ["gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo"],
+      "default_model": "gpt-4o",
+      "used_by": ["tower-control", "chatlippytm", "factory-ai", "allbots", "openclaw", "ai-full-stack"]
+    },
+    "manychat": {
+      "base_url": "https://api.manychat.com",
+      "auth": "Bearer ${MANYCHAT_API_KEY}",
+      "webhook_path": "/webhook/manychat",
+      "used_by": ["chatlippytm", "tower-control"]
+    },
+    "botbuilders": {
+      "base_url": "https://app.botbuilders.com/api",
+      "auth": "Bearer ${BOTBUILDERS_API_KEY}",
+      "used_by": ["chatlippytm", "allbots"]
+    },
+    "github": {
+      "base_url": "https://api.github.com",
+      "auth": "Bearer ${GITHUB_TOKEN}",
+      "owner": "lippytm",
+      "graphql_url": "https://api.github.com/graphql",
+      "used_by": ["all"],
+      "notes": "Used for cross-repo dispatch, reading repository data, and triggering workflows"
+    },
+    "ethereum": {
+      "mainnet_rpc": "${ETH_MAINNET_RPC_URL}",
+      "testnet_rpc": "${ETH_SEPOLIA_RPC_URL}",
+      "chain_id_mainnet": 1,
+      "chain_id_testnet": 11155111,
+      "used_by": ["web3ai", "ai-full-stack", "agency-hub"]
+    },
+    "solana": {
+      "mainnet_rpc": "https://api.mainnet-beta.solana.com",
+      "devnet_rpc": "https://api.devnet.solana.com",
+      "used_by": ["web3ai", "ai-full-stack"]
+    },
+    "polygon": {
+      "mainnet_rpc": "${POLYGON_MAINNET_RPC_URL}",
+      "testnet_rpc": "${POLYGON_MUMBAI_RPC_URL}",
+      "chain_id_mainnet": 137,
+      "chain_id_testnet": 80001,
+      "used_by": ["web3ai", "ai-full-stack"]
+    },
+    "replit": {
+      "base_url": "https://replit.com",
+      "used_by": ["tower-control", "ai-full-stack", "encyclopedia"],
+      "notes": "Replit used as live development environment"
+    },
+    "gitlab": {
+      "base_url": "https://gitlab.com/api/v4",
+      "auth": "Bearer ${GITLAB_TOKEN}",
+      "used_by": ["lippytm-ai"],
+      "notes": "GitLab mirror for cross-platform VCS"
+    }
+  },
+  "secrets_required": [
+    "OPENAI_API_KEY",
+    "MANYCHAT_API_KEY",
+    "BOTBUILDERS_API_KEY",
+    "GITHUB_TOKEN",
+    "ETH_MAINNET_RPC_URL",
+    "ETH_SEPOLIA_RPC_URL",
+    "POLYGON_MAINNET_RPC_URL",
+    "POLYGON_MUMBAI_RPC_URL",
+    "GITLAB_TOKEN",
+    "WALLET_PRIVATE_KEY"
+  ],
+  "notes": "Store all secrets in GitHub Repository Secrets or a vault — NEVER commit raw keys."
+}

@@ -1,0 +1,160 @@
+{
+  "owner": "lippytm",
+  "hub": "Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-",
+  "last_updated": "2026-03-18",
+  "repositories": [
+    {
+      "id": "agency-hub",
+      "name": "Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-",
+      "url": "https://github.com/lippytm/Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-",
+      "role": "Central Agency Hub",
+      "tags": ["hub", "social", "multimedia", "education", "blockchain", "ai"],
+      "integrates_with": ["all"],
+      "description": "Global Social Networks hub — the central cross-platform agency connecting all repositories"
+    },
+    {
+      "id": "lippytm-ai",
+      "name": "lippytm.ai",
+      "url": "https://github.com/lippytm/lippytm.ai",
+      "role": "AI Web3 Connection Hub",
+      "tags": ["hub", "web3", "ai", "gist", "github", "gitlab"],
+      "integrates_with": ["agency-hub", "web3ai", "factory-ai", "allbots", "allbots-ai"],
+      "description": "AI Web3 connection hub with Gist, Git, GitLab, GitHub and all repositories"
+    },
+    {
+      "id": "ai-full-stack",
+      "name": "AI-Full-Stack-AI-DevOps-Synthetic-Intelligence-Engines-AgentsBots-Web3-Websites-",
+      "url": "https://github.com/lippytm/AI-Full-Stack-AI-DevOps-Synthetic-Intelligence-Engines-AgentsBots-Web3-Websites-",
+      "role": "AI Engine & DevOps",
+      "tags": ["ai", "devops", "web3", "synthetic-intelligence", "agents", "bots", "websites"],
+      "integrates_with": ["agency-hub", "lippytm-ai", "factory-ai", "openclaw"],
+      "description": "AI Web3 Websites and DevOps Synthetic Intelligence Engines"
+    },
+    {
+      "id": "allbots",
+      "name": "AllBots.com",
+      "url": "https://github.com/lippytm/AllBots.com",
+      "role": "Bot Management & Automation",
+      "tags": ["bots", "automation", "github", "management"],
+      "integrates_with": ["agency-hub", "allbots-ai", "chatlippytm", "factory-ai"],
+      "description": "Bot management and automation with embedded GitHub"
+    },
+    {
+      "id": "allbots-ai",
+      "name": "AllBots.com.ai",
+      "url": "https://github.com/lippytm/AllBots.com.ai",
+      "role": "Bot AI Platform",
+      "tags": ["bots", "ai", "factory-ai"],
+      "integrates_with": ["allbots", "factory-ai", "lippytm-ai"],
+      "description": "AllBots.com growth with Factory.ai connections and all repositories"
+    },
+    {
+      "id": "factory-ai",
+      "name": "Factory.ai",
+      "url": "https://github.com/lippytm/Factory.ai",
+      "role": "Workflow Orchestration",
+      "tags": ["workflow", "orchestration", "chatgpt", "github"],
+      "integrates_with": ["agency-hub", "lippytm-ai", "allbots", "allbots-ai", "tower-control"],
+      "description": "Workflow connections to GitHub, ChatGPT, AllBots.com etc"
+    },
+    {
+      "id": "tower-control",
+      "name": "lippytm-lippytm.ai-tower-control-ai",
+      "url": "https://github.com/lippytm/lippytm-lippytm.ai-tower-control-ai",
+      "role": "Control Tower",
+      "tags": ["control-tower", "openai", "chatgpt", "integration", "botbuilders", "manychat"],
+      "integrates_with": ["factory-ai", "chatlippytm", "allbots", "lippytm-ai"],
+      "description": "Control tower for OpenAI ChatGPT integrated interfaces with BotBuilders, ManyChat, Replit"
+    },
+    {
+      "id": "chatlippytm",
+      "name": "Chatlippytm.ai.Bots",
+      "url": "https://github.com/lippytm/Chatlippytm.ai.Bots",
+      "role": "AI Chat & Business Hub",
+      "tags": ["chat", "bots", "manychat", "botbuilders", "business"],
+      "integrates_with": ["tower-control", "allbots", "factory-ai"],
+      "description": "AI Hub for Building Business of Businesses — ManyChat and BotBuilders integration"
+    },
+    {
+      "id": "encyclopedia",
+      "name": "The-Encyclopedia-of-Everything-Applied-ChatAIBots",
+      "url": "https://github.com/lippytm/The-Encyclopedia-of-Everything-Applied-ChatAIBots",
+      "role": "Education Platform",
+      "tags": ["education", "blockchain", "programming", "earn-while-you-learn"],
+      "integrates_with": ["agency-hub", "time-machines-builders", "ai-time-machines"],
+      "description": "Instruction manual for DIY programming and blockchain development — Earn While You Learn"
+    },
+    {
+      "id": "time-machines-builders",
+      "name": "Time-Machines-Builders-",
+      "url": "https://github.com/lippytm/Time-Machines-Builders-",
+      "role": "AI Automation / Time Machine",
+      "tags": ["ai", "automation", "earn-while-you-learn", "blockchain", "programming"],
+      "integrates_with": ["encyclopedia", "ai-time-machines", "transparency-logic"],
+      "description": "AI automation — Earn While You Learn to become a better programmer and blockchain developer"
+    },
+    {
+      "id": "ai-time-machines",
+      "name": "AI-Time-Machines",
+      "url": "https://github.com/lippytm/AI-Time-Machines",
+      "role": "AI Agent Platform",
+      "tags": ["ai", "agents", "time-machines"],
+      "integrates_with": ["time-machines-builders", "ai-autonomous", "agency-hub"],
+      "description": "Adding AI Agents to everything with Time Machines"
+    },
+    {
+      "id": "transparency-logic",
+      "name": "Transparency-Logic-Time-Machine-Bots-",
+      "url": "https://github.com/lippytm/Transparency-Logic-Time-Machine-Bots-",
+      "role": "Theory & Logic Engine",
+      "tags": ["theory", "logic", "time-machine", "bots"],
+      "integrates_with": ["time-machines-builders", "ai-time-machines"],
+      "description": "The Grand United Fields of Theories"
+    },
+    {
+      "id": "web3ai",
+      "name": "Web3AI",
+      "url": "https://github.com/lippytm/Web3AI",
+      "role": "Web3 + AI Integration",
+      "tags": ["web3", "ai", "blockchain"],
+      "integrates_with": ["lippytm-ai", "ai-full-stack", "agency-hub"],
+      "description": "Web3 and AI integrations"
+    },
+    {
+      "id": "openclaw",
+      "name": "OpenClaw-lippytm.AI-",
+      "url": "https://github.com/lippytm/OpenClaw-lippytm.AI-",
+      "role": "Personal AI Assistant Platform",
+      "tags": ["ai-assistant", "networking", "personal"],
+      "integrates_with": ["lippytm-ai", "ai-full-stack", "ai-autonomous"],
+      "description": "Personal AI Assistant Creation Networking Platform"
+    },
+    {
+      "id": "ai-autonomous",
+      "name": "AI-Autonomous-Systems-for-all-of-my-lippytm.ai-Repositories-Research-and-Development-integration-",
+      "url": "https://github.com/lippytm/AI-Autonomous-Systems-for-all-of-my-lippytm.ai-Repositories-Research-and-Development-integration-",
+      "role": "R&D / Autonomous Systems",
+      "tags": ["ai", "autonomous", "research", "development", "integration"],
+      "integrates_with": ["all"],
+      "description": "AI Research and Development and autonomous systems integration with all repositories"
+    },
+    {
+      "id": "intergalactic",
+      "name": "AI-Intergalactic-Zoological-Social-Multimedia-Agency-Networks-",
+      "url": "https://github.com/lippytm/AI-Intergalactic-Zoological-Social-Multimedia-Agency-Networks-",
+      "role": "Space / Future Networks",
+      "tags": ["space", "intergalactic", "quantum", "social", "multimedia"],
+      "integrates_with": ["agency-hub", "ai-autonomous", "transparency-logic"],
+      "description": "Intergalactic Zoological Society — Quantum Entanglement Many Worlds Time Machine Networks"
+    },
+    {
+      "id": "gatsby-blog",
+      "name": "gatsby-starter-blog",
+      "url": "https://github.com/lippytm/gatsby-starter-blog",
+      "role": "Web / Blog",
+      "tags": ["gatsby", "blog", "web"],
+      "integrates_with": ["agency-hub"],
+      "description": "Gatsby blog starter for publishing content"
+    }
+  ]
+}
