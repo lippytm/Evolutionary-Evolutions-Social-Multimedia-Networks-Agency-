@@ -1,0 +1,94 @@
+{
+  "version": "1.0.0",
+  "description": "Cross-platform integration map for the lippytm ecosystem",
+  "communication_channels": [
+    {
+      "name": "GitHub Actions Cross-Repo Dispatch",
+      "type": "github-actions",
+      "direction": "bidirectional",
+      "protocol": "repository_dispatch",
+      "participants": ["all"],
+      "notes": "Uses GitHub repository_dispatch events to trigger workflows across repositories"
+    },
+    {
+      "name": "OpenAI ChatGPT Bridge",
+      "type": "api",
+      "direction": "bidirectional",
+      "protocol": "rest",
+      "hub": "lippytm-lippytm.ai-tower-control-ai",
+      "participants": ["tower-control", "chatlippytm", "factory-ai", "allbots", "openclaw"],
+      "endpoint_template": "https://api.openai.com/v1/",
+      "notes": "All AI chat interactions route through the Tower Control repo"
+    },
+    {
+      "name": "Web3 / Blockchain Layer",
+      "type": "blockchain",
+      "direction": "bidirectional",
+      "protocol": "web3",
+      "participants": ["web3ai", "ai-full-stack", "agency-hub", "lippytm-ai"],
+      "networks": ["ethereum", "solana", "polygon", "aptos", "binance-smart-chain"],
+      "notes": "Smart contract interactions and on-chain data for all Web3-capable repositories"
+    },
+    {
+      "name": "ManyChat Platform Bridge",
+      "type": "webhook",
+      "direction": "inbound",
+      "protocol": "webhook",
+      "hub": "chatlippytm",
+      "participants": ["chatlippytm", "tower-control", "allbots"],
+      "notes": "ManyChat sends user interaction events via webhook to the chat hub"
+    },
+    {
+      "name": "BotBuilders Integration",
+      "type": "webhook",
+      "direction": "bidirectional",
+      "protocol": "rest",
+      "hub": "chatlippytm",
+      "participants": ["chatlippytm", "allbots", "tower-control"],
+      "notes": "BotBuilders.com bot flows integrated with AI responses"
+    },
+    {
+      "name": "Factory.ai Orchestration Bus",
+      "type": "orchestration",
+      "direction": "bidirectional",
+      "protocol": "rest",
+      "hub": "factory-ai",
+      "participants": ["factory-ai", "allbots", "allbots-ai", "lippytm-ai", "tower-control"],
+      "notes": "Factory.ai serves as the workflow orchestration bus routing tasks between services"
+    },
+    {
+      "name": "Replit Dev Environment",
+      "type": "development",
+      "direction": "bidirectional",
+      "protocol": "git-sync",
+      "participants": ["tower-control", "ai-full-stack", "encyclopedia"],
+      "notes": "Replit used as a live dev environment, synced with GitHub repositories"
+    },
+    {
+      "name": "lippytm.ai Central Hub",
+      "type": "hub",
+      "direction": "bidirectional",
+      "protocol": "rest+graphql",
+      "hub": "lippytm-ai",
+      "participants": ["all"],
+      "notes": "Central API hub that all repositories can query for ecosystem state and shared data"
+    }
+  ],
+  "integration_rules": [
+    {
+      "rule": "hub-first",
+      "description": "All cross-repository communication should be routed through lippytm.ai or the Agency Hub before reaching its destination",
+      "enforced_by": "GitHub Actions + Factory.ai"
+    },
+    {
+      "rule": "event-driven",
+      "description": "Repositories communicate via events (webhooks, repository_dispatch) rather than direct polling",
+      "enforced_by": "GitHub Actions"
+    },
+    {
+      "rule": "blockchain-verifiable",
+      "description": "Critical data exchanges and agreements between repositories should be recordable on-chain for transparency",
+      "enforced_by": "Web3 smart contracts in ai-toolkit/blockchain/"
+    }
+  ]
+}
