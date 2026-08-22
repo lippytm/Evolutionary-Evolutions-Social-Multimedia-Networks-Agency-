@@ -1,0 +1,187 @@
+schema_version: "0.3"
+module: P-011-EEBDS-001
+role: social_multimedia_and_business_delivery
+canonical_source: lippytm/Prompt-11-
+educational_source: lippytm/The-Encyclopedia-of-Everything-Applied-ChatAIBots
+
+campaign_passport_required: true
+human_approval_required: true
+minimum_product_certification_for_public_sale: Q4
+
+journey:
+  - discover
+  - understand
+  - question
+  - experience
+  - build
+  - verify
+  - choose
+  - learn_to_earn
+  - improve
+  - steward
+
+channel_packages:
+  long_form:
+    - ebook
+    - audiobook
+    - video_book
+    - interactive_video
+    - documentary
+    - fictional_film
+    - animation
+    - course
+    - workbook
+  social:
+    - short_educational_video
+    - story_clip
+    - trailer
+    - music_film
+    - quote_card
+    - infographic
+    - carousel
+    - podcast_excerpt
+    - newsletter
+    - blog
+    - livestream
+  interactive:
+    - chatbot_tutor
+    - game
+    - simulation
+    - coding_lab
+    - blockchain_exercise
+    - robotics_challenge
+    - innovation_sprint
+    - creator_toolkit
+    - affiliate_kit
+    - membership_portal
+    - franchise_node_package
+
+required_campaign_fields:
+  - campaign_id
+  - ceiu_id
+  - product_id
+  - version
+  - character_id
+  - universe_id
+  - certification_level
+  - risk_gate
+  - truth_labels
+  - audience
+  - channels
+  - source_manifest
+  - fact_fiction_disclosures
+  - rights_status
+  - voice_likeness_permissions
+  - accessibility_deliverables
+  - environmental_considerations
+  - offer
+  - pricing
+  - recurring_charge_disclosure
+  - refund_terms
+  - support_terms
+  - affiliate_rules
+  - prohibited_claims
+  - correction_reference
+  - supersession_reference
+  - approver
+  - approval_scope
+
+content_atomization:
+  preserve:
+    - product_identity
+    - version_identity
+    - truth_label
+    - fiction_disclosure
+    - material_limitations
+    - source_or_context_reference
+    - correction_reference
+    - accessibility_alternative
+    - rights_cleared_assets
+    - approved_call_to_action
+  prohibited:
+    - remove_fiction_label
+    - convert_allegation_to_fact
+    - imply_prototype_is_operational
+    - imply_guaranteed_income
+    - imply_guaranteed_investment_return
+    - imply_guaranteed_funding
+    - imply_guaranteed_health_or_legal_outcome
+
+accessibility:
+  required_when_applicable:
+    - captions
+    - transcripts
+    - audio_description_plan
+    - readable_type_and_contrast
+    - keyboard_access
+    - plain_language_alternative
+    - screen_reader_compatibility
+    - accessible_forms_and_payments
+    - flexible_pacing
+
+business_integrity:
+  controlled_affiliate_kit: true
+  required_disclosures:
+    - product_status
+    - limitations
+    - pricing
+    - recurring_terms
+    - refund_terms
+    - support_limits
+    - no_guaranteed_outcomes
+  prohibited_claims:
+    - guaranteed_earnings
+    - guaranteed_funding
+    - guaranteed_employment
+    - guaranteed_investment_return
+    - guaranteed_token_appreciation
+    - guaranteed_health_outcome
+    - guaranteed_legal_outcome
+
+metrics:
+  - qualified_reach
+  - learning_completion
+  - fact_fiction_comprehension
+  - build_completion
+  - accessibility_defects
+  - privacy_security_incidents
+  - customer_satisfaction
+  - refunds_chargebacks
+  - support_burden
+  - affiliate_compliance
+  - correction_response_time
+  - environmental_delivery_indicators
+  - lawful_revenue
+  - community_benefit
+
+pilot:
+  id: CAMPAIGN-CEIU-LK9-001
+  title: Marketplace of Unfinished Futures
+  source_ceiu: CEIU-LK9-QUANTUM-INNOVATION-001
+  status: architecture_only
+  public_launch_approved: false
+  paid_advertising_approved: false
+  nft_minting_approved: false
+  franchise_approved: false
+  planned_assets:
+    - landing_page_concept
+    - fictional_trailer_60_seconds
+    - four_quantum_question_clips
+    - reality_mode_explainer
+    - innovation_passport_exercise
+    - accessible_transcript_package
+    - one_dollar_field_guide_offer_concept
+    - affiliate_compliance_checklist
+    - campaign_correction_plan
+
+stop_work:
+  - unapproved_source_product
+  - removed_truth_or_fiction_label
+  - restricted_data_exposure
+  - missing_or_revoked_rights
+  - unsupported_product_or_outcome_claim
+  - affiliate_misrepresentation
+  - critical_accessibility_privacy_security_safety_or_rights_defect
+  - unpropagated_material_correction
+  - absent_expired_or_revoked_human_approval
+  - red_risk_gate
