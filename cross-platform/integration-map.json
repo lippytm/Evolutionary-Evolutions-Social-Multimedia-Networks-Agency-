@@ -57,6 +57,32 @@
       "notes": "Factory.ai serves as the workflow orchestration bus routing tasks between services"
     },
     {
+      "name": "Hermes Toolkit Bus",
+      "type": "agent-tooling",
+      "direction": "bidirectional",
+      "protocol": "toolkit",
+      "hub": "hermes-ai",
+      "participants": ["hermes-ai", "agency-hub", "clone-identity", "clone-engine-fabric", "myclaw", "openclaw"],
+      "notes": "Hermes toolkits distribute reusable AI capabilities across clone, assistant, and swarm systems"
+    },
+    {
+      "name": "Clone Engine Fabric",
+      "type": "identity-fabric",
+      "direction": "bidirectional",
+      "protocol": "multi-model",
+      "hub": "clone-engine-fabric",
+      "participants": ["clone-engine-fabric", "clone-identity", "hermes-ai", "myclaw", "agency-hub"],
+      "notes": "AI-agnostic clone engine fabric coordinates shared persona state and model routing"
+    },
+    {
+      "name": "GitHub Copilot Swarm Operations",
+      "type": "copilot",
+      "direction": "bidirectional",
+      "protocol": "github-copilot",
+      "participants": ["agency-hub", "hermes-ai", "clone-engine-fabric", "myclaw", "ai-full-stack"],
+      "notes": "GitHub Copilot-assisted workflows support Hermes fabric engines and swarm systems during repository work"
+    },
+    {
       "name": "Replit Dev Environment",
       "type": "development",
       "direction": "bidirectional",
@@ -89,6 +115,11 @@
       "rule": "blockchain-verifiable",
       "description": "Critical data exchanges and agreements between repositories should be recordable on-chain for transparency",
       "enforced_by": "Web3 smart contracts in ai-toolkit/blockchain/"
+    },
+    {
+      "rule": "identity-aware-orchestration",
+      "description": "Clone identity, Hermes toolkit execution, and swarm routing should preserve persona boundaries while allowing GitHub Copilot-assisted coordination",
+      "enforced_by": "Clone Engine Fabric + Hermes Toolkit Bus + GitHub Copilot workflows"
     }
   ]
 }

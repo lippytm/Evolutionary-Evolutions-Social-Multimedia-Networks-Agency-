@@ -13,6 +13,7 @@ This repository serves as the central **agency and media-delivery hub** connecti
 - **Cross-Platform Integration** — unified configurations that link repositories and platforms
 - **AI Full-Stack Toolkits** — templates and agents for programming and blockchain learning
 - **GitHub Actions Workflows** — automated cross-repository status and orchestration patterns
+- **AI Clone + Hermes + Fabric + Swarm Coordination** — identity-aware clone systems, Hermes toolkits, engine fabrics, and GitHub Copilot-assisted swarm operations
 - **Educational Entertainment Delivery** — rights-cleared packaging for ebooks, audiobooks, video books, interactive videos, films, music, courses, games, and social media
 - **Business of Businesses Delivery** — transparent product, affiliate, membership, licensing, and franchise campaign architecture
 - **Quality-Preserving Distribution** — truth labels, fictional boundaries, accessibility, corrections, rights, privacy, and HumanApprovalGate
@@ -106,6 +107,10 @@ This remains an architecture-only pilot. It is not approved for public launch, p
 | [Transparency-Logic-Time-Machine-Bots-](https://github.com/lippytm/Transparency-Logic-Time-Machine-Bots-) | Grand United Fields of Theories | Theory/Logic |
 | [Web3AI](https://github.com/lippytm/Web3AI) | Web3 plus AI integrations | Web3 |
 | [OpenClaw-lippytm.AI-](https://github.com/lippytm/OpenClaw-lippytm.AI-) | Personal AI assistant creation network | AI Assistant |
+| [AI-Clone-of-Charles-Earl-Lipshay-lippytm-lippytm.AI-lippytmai-](https://github.com/lippytm/AI-Clone-of-Charles-Earl-Lipshay-lippytm-lippytm.AI-lippytmai-) | AI clone identity layer for the lippytm ecosystem | Clone Identity |
+| [Hermes-AI-Hermes](https://github.com/lippytm/Hermes-AI-Hermes) | Hermes toolkit hub for adding AI Hermes capabilities across repositories | Hermes Toolkit |
+| [Gemini-NotebookLM-s-AI-Agnostic-Clone-Engine-Fabric-](https://github.com/lippytm/Gemini-NotebookLM-s-AI-Agnostic-Clone-Engine-Fabric-) | AI-agnostic clone engine fabric for cross-model orchestration | Engine Fabric |
+| [MyClaw.lippytm.AI-](https://github.com/lippytm/MyClaw.lippytm.AI-) | Cross-platform AI swarm communications and networking management system | Swarm Systems |
 | [AI-Autonomous-Systems-for-all-of-my-lippytm.ai-Repositories-Research-and-Development-integration-](https://github.com/lippytm/AI-Autonomous-Systems-for-all-of-my-lippytm.ai-Repositories-Research-and-Development-integration-) | AI R&D and autonomous systems | R&D |
 | [AI-Intergalactic-Zoological-Social-Multimedia-Agency-Networks-](https://github.com/lippytm/AI-Intergalactic-Zoological-Social-Multimedia-Agency-Networks-) | Intergalactic social networks and Quantum Questions | Space/Future |
 
@@ -131,7 +136,7 @@ See [`cross-platform/`](./cross-platform/) for:
 
 - `repo-index.json` — machine-readable repository roles
 - `integration-map.json` — repository communication architecture
-- `api-bridge-config.json` — external-platform configuration patterns
+- `api-bridge-config.json` — external-platform and GitHub Copilot configuration patterns
 - `eebds-delivery-map.yaml` — Prompt #11 campaign, channel, accessibility, affiliate, correction, and stop-work controls
 
 No configuration file should contain production secrets, private keys, personal medical records, identity documents, confidential witness information, or unrestricted credentials.

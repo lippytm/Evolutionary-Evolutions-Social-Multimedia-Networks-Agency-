@@ -1,7 +1,7 @@
 {
   "owner": "lippytm",
   "hub": "Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-",
-  "last_updated": "2026-03-18",
+  "last_updated": "2026-08-31",
   "repositories": [
     {
       "id": "agency-hub",
@@ -128,6 +128,42 @@
       "tags": ["ai-assistant", "networking", "personal"],
       "integrates_with": ["lippytm-ai", "ai-full-stack", "ai-autonomous"],
       "description": "Personal AI Assistant Creation Networking Platform"
+    },
+    {
+      "id": "clone-identity",
+      "name": "AI-Clone-of-Charles-Earl-Lipshay-lippytm-lippytm.AI-lippytmai-",
+      "url": "https://github.com/lippytm/AI-Clone-of-Charles-Earl-Lipshay-lippytm-lippytm.AI-lippytmai-",
+      "role": "AI Clone Identity Layer",
+      "tags": ["ai", "clone", "identity", "persona"],
+      "integrates_with": ["agency-hub", "openclaw", "hermes-ai", "clone-engine-fabric"],
+      "description": "AI clone identity repository for Charles Earl Lipshay, lippytm, lippytm.AI, and lippytmai personas"
+    },
+    {
+      "id": "hermes-ai",
+      "name": "Hermes-AI-Hermes",
+      "url": "https://github.com/lippytm/Hermes-AI-Hermes",
+      "role": "Hermes Toolkit Hub",
+      "tags": ["ai", "hermes", "toolkit", "automation"],
+      "integrates_with": ["agency-hub", "clone-identity", "clone-engine-fabric", "myclaw", "openclaw"],
+      "description": "AI Hermes for all repositories with reusable Hermes toolkits"
+    },
+    {
+      "id": "clone-engine-fabric",
+      "name": "Gemini-NotebookLM-s-AI-Agnostic-Clone-Engine-Fabric-",
+      "url": "https://github.com/lippytm/Gemini-NotebookLM-s-AI-Agnostic-Clone-Engine-Fabric-",
+      "role": "AI-Agnostic Clone Engine Fabric",
+      "tags": ["ai", "clone-engine", "fabric", "gemini", "notebooklm"],
+      "integrates_with": ["agency-hub", "clone-identity", "hermes-ai", "myclaw"],
+      "description": "Clone engine fabric for model-agnostic orchestration across AI clone systems"
+    },
+    {
+      "id": "myclaw",
+      "name": "MyClaw.lippytm.AI-",
+      "url": "https://github.com/lippytm/MyClaw.lippytm.AI-",
+      "role": "AI Swarm Communications",
+      "tags": ["ai", "swarm", "communications", "networking", "management"],
+      "integrates_with": ["agency-hub", "hermes-ai", "clone-engine-fabric", "ai-autonomous"],
+      "description": "Cross-platform and cross-channel framework for AI swarm communications and networking management"
     },
     {
       "id": "ai-autonomous",
