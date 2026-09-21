@@ -124,10 +124,10 @@
       "id": "openclaw",
       "name": "OpenClaw-lippytm.AI-",
       "url": "https://github.com/lippytm/OpenClaw-lippytm.AI-",
-      "role": "Personal AI Assistant Platform",
-      "tags": ["ai-assistant", "networking", "personal"],
+      "role": "AI Jarvis Assistant / Engineer Manager",
+      "tags": ["ai-assistant", "jarvis", "engineering", "networking", "personal"],
       "integrates_with": ["lippytm-ai", "ai-full-stack", "ai-autonomous"],
-      "description": "Personal AI Assistant Creation Networking Platform"
+      "description": "AI Jarvis assistant and Engineer Manager platform for personal assistant creation and networking"
     },
     {
       "id": "clone-identity",
@@ -160,10 +160,10 @@
       "id": "myclaw",
       "name": "MyClaw.lippytm.AI-",
       "url": "https://github.com/lippytm/MyClaw.lippytm.AI-",
-      "role": "AI Swarm Communications",
-      "tags": ["ai", "swarm", "communications", "networking", "management"],
+      "role": "AI Communications Manager",
+      "tags": ["ai", "swarm", "communications", "networking", "management", "manager"],
       "integrates_with": ["agency-hub", "hermes-ai", "clone-engine-fabric", "ai-autonomous"],
-      "description": "Cross-platform and cross-channel framework for AI swarm communications and networking management"
+      "description": "Cross-platform and cross-channel Communications Manager framework for AI swarm communications and networking management"
     },
     {
       "id": "ai-autonomous",

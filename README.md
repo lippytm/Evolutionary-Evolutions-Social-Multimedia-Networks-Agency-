@@ -106,11 +106,11 @@ This remains an architecture-only pilot. It is not approved for public launch, p
 | [AI-Time-Machines](https://github.com/lippytm/AI-Time-Machines) | TETIC, timelines, simulations, correction, and archives | AI Time Systems |
 | [Transparency-Logic-Time-Machine-Bots-](https://github.com/lippytm/Transparency-Logic-Time-Machine-Bots-) | Grand United Fields of Theories | Theory/Logic |
 | [Web3AI](https://github.com/lippytm/Web3AI) | Web3 plus AI integrations | Web3 |
-| [OpenClaw-lippytm.AI-](https://github.com/lippytm/OpenClaw-lippytm.AI-) | Personal AI assistant creation network | AI Assistant |
+| [OpenClaw-lippytm.AI-](https://github.com/lippytm/OpenClaw-lippytm.AI-) | AI Jarvis assistant and Engineer Manager creation network | AI Jarvis Assistant / Engineer Manager |
 | [AI-Clone-of-Charles-Earl-Lipshay-lippytm-lippytm.AI-lippytmai-](https://github.com/lippytm/AI-Clone-of-Charles-Earl-Lipshay-lippytm-lippytm.AI-lippytmai-) | AI clone identity layer for the lippytm ecosystem | Clone Identity |
 | [Hermes-AI-Hermes](https://github.com/lippytm/Hermes-AI-Hermes) | Hermes toolkit hub for adding AI Hermes capabilities across repositories | Hermes Toolkit |
 | [Gemini-NotebookLM-s-AI-Agnostic-Clone-Engine-Fabric-](https://github.com/lippytm/Gemini-NotebookLM-s-AI-Agnostic-Clone-Engine-Fabric-) | AI-agnostic clone engine fabric for cross-model orchestration | Engine Fabric |
-| [MyClaw.lippytm.AI-](https://github.com/lippytm/MyClaw.lippytm.AI-) | Cross-platform AI swarm communications and networking management system | Swarm Systems |
+| [MyClaw.lippytm.AI-](https://github.com/lippytm/MyClaw.lippytm.AI-) | Cross-platform AI Communications Manager and networking management system | AI Communications Manager |
 | [AI-Autonomous-Systems-for-all-of-my-lippytm.ai-Repositories-Research-and-Development-integration-](https://github.com/lippytm/AI-Autonomous-Systems-for-all-of-my-lippytm.ai-Repositories-Research-and-Development-integration-) | AI R&D and autonomous systems | R&D |
 | [AI-Intergalactic-Zoological-Social-Multimedia-Agency-Networks-](https://github.com/lippytm/AI-Intergalactic-Zoological-Social-Multimedia-Agency-Networks-) | Intergalactic social networks and Quantum Questions | Space/Future |
 
