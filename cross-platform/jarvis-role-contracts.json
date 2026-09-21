@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "canonical_source": "Unified AI Jarvis foundation",
+  "roles": {
+    "ai-jarvis-assistant": {
+      "repository_binding": "coordination layer",
+      "responsibilities": [
+        "route work items",
+        "maintain evidence",
+        "surface approval gates"
+      ],
+      "execution_authority": "proposal-only"
+    },
+    "engineer-manager": {
+      "repository_binding": "OpenClaw-lippytm.AI-",
+      "responsibilities": [
+        "architecture",
+        "implementation proposals",
+        "tests",
+        "rollback"
+      ],
+      "execution_authority": "feature branches and pull requests only"
+    },
+    "communications-manager": {
+      "repository_binding": "MyClaw.lippytm.AI-",
+      "responsibilities": [
+        "provider handoffs",
+        "status reports",
+        "decision and correction records"
+      ],
+      "execution_authority": "draft-only unless externally approved"
+    }
+  },
+  "shared_controls": {
+    "human_final_authority": true,
+    "prohibited_without_explicit_approval": [
+      "merge",
+      "deploy",
+      "publish",
+      "external message",
+      "spend or transfer assets",
+      "legal commitment",
+      "production secret change",
+      "trading execution",
+      "physical-system control"
+    ],
+    "required_evidence": [
+      "source references",
+      "changed artifacts",
+      "tests actually run",
+      "limitations",
+      "rollback plan",
+      "approval state"
+    ],
+    "privacy": "Do not place credentials, private identity records, medical records, customer data, or unrestricted personal data in handoffs."
+  }
+}
