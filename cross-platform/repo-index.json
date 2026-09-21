@@ -1,16 +1,16 @@
 {
   "owner": "lippytm",
   "hub": "Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-",
-  "last_updated": "2026-08-31",
+  "last_updated": "2026-09-21",
   "repositories": [
     {
       "id": "agency-hub",
       "name": "Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-",
       "url": "https://github.com/lippytm/Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-",
-      "role": "Central Agency Hub",
-      "tags": ["hub", "social", "multimedia", "education", "blockchain", "ai"],
+      "role": "Central Agency Hub + AI Jarvis Communications",
+      "tags": ["hub", "social", "multimedia", "education", "blockchain", "ai", "jarvis", "communications"],
       "integrates_with": ["all"],
-      "description": "Global Social Networks hub — the central cross-platform agency connecting all repositories"
+      "description": "Global Social Networks hub — the central cross-platform agency connecting all repositories with AI Jarvis assistant engineering and communications management"
     },
     {
       "id": "lippytm-ai",
