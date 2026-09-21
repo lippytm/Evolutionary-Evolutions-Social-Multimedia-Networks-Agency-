@@ -11,7 +11,7 @@
 This repository serves as the central **agency and media-delivery hub** connecting the `lippytm` repositories into a unified, cross-platform AI-powered ecosystem. It provides:
 
 - **Cross-Platform Integration** — unified configurations that link repositories and platforms
-- **AI Jarvis Assistant Engineer Manager Communications Manager** — unified AI-assisted coordination for assistant workflows, engineering management, and cross-platform communications
+- **AI Jarvis Assistant, Engineer Manager, and Communications Manager** — unified AI-assisted coordination for assistant workflows, engineering management, and cross-platform communications
 - **AI Full-Stack Toolkits** — templates and agents for programming and blockchain learning
 - **GitHub Actions Workflows** — automated cross-repository status and orchestration patterns
 - **AI Clone + Hermes + Fabric + Swarm Coordination** — identity-aware clone systems, Hermes toolkits, engine fabrics, and GitHub Copilot-assisted swarm operations
@@ -93,7 +93,7 @@ This remains an architecture-only pilot. It is not approved for public launch, p
 
 | Repository | Purpose | Integration |
 |---|---|---|
-| [Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-](https://github.com/lippytm/Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-) | Central agency, media, audience, campaign, and AI Jarvis communications hub | Delivery + Jarvis Comms |
+| [Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-](https://github.com/lippytm/Evolutionary-Evolutions-Social-Multimedia-Networks-Agency-) | Central agency, media, audience, campaign, and AI Jarvis management hub | Delivery + Jarvis Management |
 | [Prompt-11-](https://github.com/lippytm/Prompt-11-) | Canonical governance, evidence, quality, character, and delivery definitions | Canonical Control |
 | [The-Encyclopedia-of-Everything-Applied-ChatAIBots](https://github.com/lippytm/The-Encyclopedia-of-Everything-Applied-ChatAIBots) | Character–ecosystem curriculum and applied learning | Education |
 | [lippytm.ai](https://github.com/lippytm/lippytm.ai) | AI Web3 connection hub | Core Hub |
