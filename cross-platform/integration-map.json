@@ -3,6 +3,18 @@
   "description": "Cross-platform integration map for the lippytm ecosystem",
   "communication_channels": [
     {
+      "name": "MemPalace Jarvis and Swarm Memory",
+      "type": "memory",
+      "direction": "bidirectional",
+      "protocol": "local-mcp-stdio",
+      "hub": "tower-control",
+      "participants": ["agency-hub", "tower-control", "factory-ai", "openclaw", "myclaw", "hermes-ai", "clone-engine-fabric"],
+      "enabled": false,
+      "status": "configuration-only",
+      "platform_config": "mempalace",
+      "notes": "Opt-in scoped memory for AI-building-AI work packets and Jarvis assistant handoffs. Platform routes and required adapter controls are defined in api-bridge-config.json; no live connector or authorization enforcement is implemented here."
+    },
+    {
       "name": "GitHub Actions Cross-Repo Dispatch",
       "type": "github-actions",
       "direction": "bidirectional",

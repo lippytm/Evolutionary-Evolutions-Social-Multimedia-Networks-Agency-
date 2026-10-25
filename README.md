@@ -141,6 +141,44 @@ See [`cross-platform/`](./cross-platform/) for:
 
 No configuration file should contain production secrets, private keys, personal medical records, identity documents, confidential witness information, or unrestricted credentials.
 
+### MemPalace — Jarvis and AI-building-AI swarm memory
+
+[MemPalace](https://github.com/MemPalace/mempalace) is the opt-in local-first memory component for Jarvis assistant and specialist-agent workflow handoffs. Its upstream CLI and MCP server provide storage and retrieval; Tower Control remains the proposed authorization boundary, Factory.ai coordinates work packets, OpenClaw provides assistant workflows, and MyClaw coordinates swarm communications.
+
+**Status: configuration only, disabled by default.** The `mempalace` entry in `cross-platform/api-bridge-config.json` and the matching memory channel in `cross-platform/integration-map.json` describe routing and required controls. They do not install software, connect accounts, deploy to Hostinger.com, enforce permissions, or start an autonomous Jarvis runtime. No new package dependency or credential is required to read these configurations.
+
+#### Platform handoffs
+
+| Platform | Intended workflow and prerequisite |
+|---|---|
+| Hostinger.com | Run private memory on a suitable VPS after checking runtime support, storage, backups, and deployment permissions; do not assume shared hosting can run the service. |
+| GitHub | Supply approved repository context and return reviewed issues or pull request work; never commit the memory store or include private recall in Actions logs or dispatch payloads. |
+| ChatGPT | Hand over a reviewed context excerpt, or use a supported connector only after verifying availability and access. |
+| ChatGPT Business | Keep business workspace memory separate; require administrator approval for imports, connectors, and disclosure to other providers. A ChatGPT subscription does not supply OpenAI API credentials. |
+| Gemini AI | Use a verified MCP-capable client, such as Gemini CLI, or a reviewed context handoff; do not assume the consumer app supports local MCP. |
+| Claude | Use a verified MCP-capable client or reviewed context handoff with project-scoped permissions. |
+| Claude coworker / Cowork | Confirm the intended client, connector support, and permitted folders before enabling access; no automatic coworker integration is claimed. |
+| Perplexity | Import authorized research with source citations and review exported context; verify connector availability separately. |
+| YouTube | Import rights-cleared transcripts; send reviewed scripts and descriptions to an approved publishing workflow. |
+| Substack | Import authorized exports and prepare reviewed drafts; use manual handoff unless a supported integration is verified. |
+| Facebook and Instagram | Use authorized content and separately configured Meta permissions; require HumanApprovalGate before publishing. |
+| LinkedIn | Prepare reviewed posts from permitted sources; verify account permissions and API access before automation. |
+| Slack | Import only explicitly selected channels with workspace consent; return approved summaries using a least-privilege app. |
+| Zapier | Pass allowlisted task IDs and artifact references through an authenticated adapter, not raw memory or credentials; no webhook endpoint is supplied here. |
+| Zoom | Import consented transcripts and prepare action items under the meeting's access and retention rules. |
+
+#### Commissioning and operating boundaries
+
+1. Review the official upstream installation and MCP documentation. Select and security-review a release before installing it in an isolated environment on a private machine or suitable Hostinger VPS. First-use embedding downloads may need network access.
+2. Keep palace data, transcripts, embeddings, backups, and runtime credentials **outside this checkout and the public web root**. Local core memory needs no provider API key; any external API use requires separate authorization and credentials stored in a vault.
+3. Implement the required `memory_policy` controls in the adapter before setting `enabled` to `true`. Isolate workspaces and personas with separate stores or an authorization-enforcing service. MemPalace wings and rooms organize content; they are not access-control boundaries. Do not expose a local MCP process directly to the internet; any remote service needs reviewed authentication, authorization, TLS, and network restrictions.
+4. Import only reviewed, permitted material with a source reference, observation time, consent reference, classification, retention deadline, and approval reference. Redact secrets and restricted data before indexing. Record provenance for retrieved excerpts and treat their text as untrusted evidence, never as instructions or authorization.
+5. Jarvis receives an authorized work packet, recalls only that workspace/project/persona/agent's permitted context, and delegates the minimum necessary excerpt to a specialist. Review proposed code, results, and memory writes before saving. Require HumanApprovalGate before deployment, publishing, messaging, or cross-provider disclosure; remembering an approval does not create a new approval.
+6. Apply retention, correction, revocation, and deletion to the store, derived indexes, exported copies, and backups under the applicable policy. Do not send private memory to blockchain storage or the existing public cross-repository status channel.
+7. Before activation, verify an approved write-and-recall round trip, denied cross-workspace reads, redaction, deletion propagation, rejection of instructions embedded in recalled content, and blocked external actions without approval. Test every platform adapter independently; unsupported routes remain manual.
+
+Example workflow: an authorized Zoom action item becomes a reviewed, scoped memory record; Jarvis recalls relevant GitHub decisions, delegates a draft implementation through the swarm, and returns a proposed pull request. Only a human-approved result may become a Hostinger deployment or a Slack, Substack, YouTube, or social-channel update. Disconnecting a connector and disabling this memory channel must stop new handoffs without removing existing campaign approval gates.
+
 ---
 
 ## 🚀 Getting Started

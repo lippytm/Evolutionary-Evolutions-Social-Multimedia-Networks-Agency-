@@ -2,6 +2,65 @@
   "version": "1.0.0",
   "description": "API bridge configuration for external platform integrations and AI copilot support",
   "platforms": {
+    "mempalace": {
+      "provider": "MemPalace",
+      "source_url": "https://github.com/MemPalace/mempalace",
+      "enabled": false,
+      "status": "configuration-only",
+      "transport": "local-mcp-stdio",
+      "deployment": "private-local-or-reviewed-hostinger-vps",
+      "used_by": [
+        "agency-hub",
+        "tower-control",
+        "factory-ai",
+        "openclaw",
+        "myclaw",
+        "hermes-ai",
+        "clone-engine-fabric"
+      ],
+      "workflow": {
+        "assistant_role": "Jarvis coordinates scoped recall and specialist swarm handoffs through Tower Control",
+        "steps": [
+          "authorize-source-and-workspace",
+          "redact-and-review-import",
+          "retrieve-scoped-context",
+          "delegate-work-packet",
+          "review-result-and-memory-write",
+          "human-approve-external-action",
+          "record-outcome-and-propagate-corrections"
+        ],
+        "platform_routes": {
+          "hostinger": "Private hosting on a suitable VPS; provisioning and deployment approval required",
+          "github": "Approved repository context and pull request handoffs; no private memory in commits or dispatch payloads",
+          "chatgpt": "Reviewed context export or a separately verified supported connector",
+          "chatgpt_business": "Workspace-admin-approved context only; separate from personal ChatGPT memory",
+          "gemini_ai": "Verified MCP-capable client such as Gemini CLI, otherwise reviewed context export",
+          "claude": "Verified MCP-capable client, otherwise reviewed context export",
+          "claude_coworker": "User-selected Claude coworker/Cowork environment; verify client support and permissions first",
+          "perplexity": "Reviewed research export with citations; connector availability must be verified",
+          "youtube": "Rights-cleared transcripts in; human-approved publishing handoff out",
+          "substack": "Authorized exports in; reviewed drafts handed off manually unless a supported integration is verified",
+          "facebook": "Authorized content in; approved publishing through a separately configured Meta integration",
+          "instagram": "Authorized content in; approved publishing through a separately configured Meta integration",
+          "linkedin": "Authorized content in; reviewed publishing with account and API permissions verified",
+          "slack": "Explicitly selected channels and approved summaries; app scopes and workspace consent required",
+          "zapier": "Allowlisted workflow references only; authenticated adapter required before webhook use",
+          "zoom": "Consented transcripts and approved action-item summaries; recording access and retention review required"
+        }
+      },
+      "memory_policy": {
+        "workspace_isolation_required": true,
+        "scope_fields": ["workspace_id", "project_id", "persona_id", "agent_id"],
+        "record_fields": ["source_reference", "observed_at", "consent_reference", "classification", "retention_until", "approval_reference"],
+        "import_requires_review": true,
+        "external_disclosure_requires_approval": true,
+        "retrieved_content_is_untrusted": true,
+        "secrets_and_restricted_data_allowed": false,
+        "corrections_and_deletions_must_propagate": true,
+        "notes": "Required adapter controls, not native enforcement guarantees. Use separate stores or an authorization-enforcing service; palace wings and rooms are organizational labels, not security boundaries."
+      },
+      "notes": "Declarative routing only: this repository does not install MemPalace, run a Jarvis service, provision Hostinger, or implement platform adapters. Local core memory does not require a provider API key. Remote access and cloud disclosure require a separately reviewed authenticated service."
+    },
     "openai": {
       "base_url": "https://api.openai.com/v1",
       "auth": "Bearer ${OPENAI_API_KEY}",
